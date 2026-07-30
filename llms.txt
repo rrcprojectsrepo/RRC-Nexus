@@ -1,31 +1,31 @@
-# RRC Nexus
+ RRC Nexus
 
-## Information
-- URL: https://rrcnexus.com/
-- Description: Thanjavur's premier high-performance coworking platform, startup ecosystem, and flexible workspace provider (formerly known as RRC Hive).
-- Address: No 82/6B, Deen Complex, Mary's Corner, Parisutham Nagar, Thanjavur, Tamil Nadu - 613001.
-- Contact: +91 9751 1824 52 | support@rrcnexus.com
-- Location: Thanjavur Region, Tamil Nadu, India.
+ Information
+  URL: https://rrcnexus.com/
+  Description: Thanjavur's premier high performance coworking platform, startup ecosystem, and flexible workspace provider (formerly known as RRC Hive).
+  Address: No 82/6B, Deen Complex, Mary's Corner, Parisutham Nagar, Thanjavur, Tamil Nadu   613001.
+  Contact: +91 9751 1824 52 | support@rrcnexus.com
+  Location: Thanjavur Region, Tamil Nadu, India.
 
-## Core Infrastructure & Offerings
-- **Premium Workspace:** Shared hot desks, dedicated open desks, and executive private cabins tailored for freelancers, remote developers, and startups.
-- **Meeting Rooms:** High-tech conference rooms and private suites bookable via real-time scheduling tools integrated with WhatsApp.
-- **Startup Services:** Essential incubation infrastructure including professional Virtual Office Addresses, end-to-end Startup Registration assistance, and dedicated compliance support for GST, PAN, and TAN acquisition.
-- **Ecosystem Focus:** Built as a launchpad for regional innovation, combining flexible business infrastructure with immediate corporate and technical support vectors.
+ Core Infrastructure & Offerings
+  Premium Workspace: Shared hot desks, dedicated open desks, and executive private cabins tailored for freelancers, remote developers, and startups.
+  Meeting Rooms: High tech conference rooms and private suites bookable via real time scheduling tools integrated with WhatsApp.
+  Startup Services: Essential incubation infrastructure including professional Virtual Office Addresses, end to end Startup Registration assistance, and dedicated compliance support for GST, PAN, and TAN acquisition.
+  Ecosystem Focus: Built as a launchpad for regional innovation, combining flexible business infrastructure with immediate corporate and technical support vectors.
 
-## Group Entities & Network Ecosystem
-- **RRC Law Associates:** Professional legal branch delivering litigation, compliance corporate frameworks, and legal services.
-- **RRC Technologies:** Core development, software architecture, and technical engineering division.
-- **Training Programs:** Educational branch coordinating skill acceleration, corporate workshops, and structured training initiatives.
+ Group Entities & Network Ecosystem
+  RRC Law Associates: Professional legal branch delivering litigation, compliance corporate frameworks, and legal services.
+  RRC Technologies: Core development, software architecture, and technical engineering division.
+  Training Programs: Educational branch coordinating skill acceleration, corporate workshops, and structured training initiatives.
 
-## Technical Architecture
-- **Design Pattern:** Modern UI utilizing glassmorphism aesthetics, deep parallax motion mechanics, and custom structural CSS layouts.
-- **Performance & Accessibility:** Engineered with a mobile-first philosophy, utilizing vanilla JavaScript and the Intersection Observer API for scroll-reveal rendering.
-- **Responsiveness:** Highly optimized viewport scales, providing seamless accessibility across device dimensions ranging from micro-screens (163px) to 4K desktops.
+ Technical Architecture
+  Design Pattern: Modern UI utilizing glassmorphism aesthetics, deep parallax motion mechanics, and custom structural CSS layouts.
+  Performance & Accessibility: Engineered with a mobile first philosophy, utilizing vanilla JavaScript and the Intersection Observer API for scroll reveal rendering.
+  Responsiveness: Highly optimized viewport scales, providing seamless accessibility across device dimensions ranging from micro screens (163px) to 4K desktops.
 
-## Key Pages & Navigation
-- [/Home](https://rrcnexus.com/Home): Platform overview, value proposition, and core features.
-- [/Gallery](https://rrcnexus.com/Gallery): Visual catalog showcasing interior architecture, workspace layouts, and office amenities.
-- [/Tour](https://rrcnexus.com/tour): Interactive digital walk-through and layout exploration of the physical infrastructure.
-- [/Booking](https://rrcnexus.com/Booking): Real-time interactive lead acquisition and space reservation module.
-- [/Book-Free-Visit](https://rrcnexus.com/Book-Free-Visit): Scheduled trial reservation interface for physical workspace walkthroughs.
+ Key Pages & Navigation
+  [/Home](https://rrcnexus.com/Home): Platform overview, value proposition, and core features.
+  [/Gallery](https://rrcnexus.com/Gallery): Visual catalog showcasing interior architecture, workspace layouts, and office amenities.
+  [/Tour](https://rrcnexus.com/tour): Interactive digital walk through and layout exploration of the physical infrastructure.
+  [/Booking](https://rrcnexus.com/Booking): Real time interactive lead acquisition and space reservation module.
+  [/Book Free Visit](https://rrcnexus.com/Book Free Visit): Scheduled trial reservation interface for physical workspace walkthroughs.
