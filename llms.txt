@@ -28,4 +28,4 @@
   [/Gallery](https://rrcnexus.com/Gallery): Visual catalog showcasing interior architecture, workspace layouts, and office amenities.
   [/Tour](https://rrcnexus.com/tour): Interactive digital walk through and layout exploration of the physical infrastructure.
   [/Booking](https://rrcnexus.com/Booking): Real time interactive lead acquisition and space reservation module.
-  [/Book Free Visit](https://rrcnexus.com/Book Free Visit): Scheduled trial reservation interface for physical workspace walkthroughs.
+  [/Book Free Visit](https://rrcnexus.com/Book-Free-Visit): Scheduled trial reservation interface for physical workspace walkthroughs.
