@@ -2,12 +2,23 @@ const path = require('path');
 require('dotenv').config({ path: path.join(__dirname, '.env') });
 
 const express = require('express');
+const cors = require('cors');
 const Groq = require('groq-sdk');
 const { RRC_NEXUS_SYSTEM_PROMPT } = require('./knowledge');
 const { retrieveKnowledge, resolveDeterministicAnswer } = require('./retriever');
 
 const app = express();
 const port = process.env.PORT || 3000;
+
+const allowedOrigins = ['https://rrcnexus.com', 'https://www.rrcnexus.com'];
+
+app.use(
+    cors({
+        origin: allowedOrigins,
+        methods: ['GET', 'POST', 'OPTIONS'],
+        allowedHeaders: ['Content-Type']
+    })
+);
 
 app.use(express.json());
 

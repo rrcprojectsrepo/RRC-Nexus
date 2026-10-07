@@ -187,7 +187,7 @@
         try {
             let response;
             try {
-                response = await fetch('/api/chat', {
+                response = await fetch('https://api.rrcnexus.com/api/chat', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
