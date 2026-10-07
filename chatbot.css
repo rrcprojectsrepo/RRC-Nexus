@@ -1,5 +1,6 @@
 .rrc-chat-widget {
     --rrc-chat-navy: #1b365d;
+    --rrc-chat-navy-hover: #244a78;
     --rrc-chat-orange: #fdb813;
     --rrc-chat-bottom: 174px;
     --rrc-chat-right: 30px;
@@ -11,44 +12,95 @@
     box-sizing: border-box;
 }
 
+/* ---------- Collapsed: branded "Ask RRC AI" pill ---------- */
 .rrc-chat-launcher {
     position: fixed;
     right: var(--rrc-chat-right);
     bottom: var(--rrc-chat-bottom);
     z-index: 1060;
-    display: grid;
-    width: 58px;
-    height: 58px;
-    place-items: center;
-    padding: 0;
-    border: 0;
-    border-radius: 50%;
+    display: inline-flex;
+    min-height: 52px;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 18px 8px 8px;
+    border: 1px solid rgba(253, 184, 19, 0.38);
+    border-radius: 999px;
     background: var(--rrc-chat-navy);
     color: #fff;
-    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.24);
+    font: inherit;
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    line-height: 1;
+    white-space: nowrap;
+    box-shadow: 0 8px 24px rgba(18, 33, 53, 0.32);
     cursor: pointer;
-    transition: background-color 160ms ease, transform 160ms ease;
+    transition: background-color 160ms ease, transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
+    animation: rrc-chat-arrive 700ms ease-out 400ms both;
 }
 
 .rrc-chat-launcher:hover {
-    background: #244a78;
+    background: var(--rrc-chat-navy-hover);
+    border-color: var(--rrc-chat-orange);
     transform: translateY(-2px);
+    box-shadow: 0 12px 28px rgba(18, 33, 53, 0.36);
 }
 
-.rrc-chat-launcher svg {
-    width: 27px;
-    height: 27px;
-    fill: none;
-    stroke: currentColor;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    stroke-width: 1.8;
+.rrc-chat-launcher:active {
+    transform: translateY(0);
+}
+
+.rrc-chat-launcher-icon {
+    position: relative;
+    display: grid;
+    width: 36px;
+    height: 36px;
+    flex: 0 0 auto;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--rrc-chat-orange);
+    color: var(--rrc-chat-navy);
+}
+
+.rrc-chat-launcher-icon::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 10px;
+    height: 10px;
+    border: 2px solid var(--rrc-chat-navy);
+    border-radius: 50%;
+    background: #22c55e;
+}
+
+.rrc-chat-launcher-icon svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+    stroke: none;
+}
+
+.rrc-chat-launcher-text {
+    padding-right: 2px;
+    color: #fff;
+}
+
+@keyframes rrc-chat-arrive {
+    from {
+        opacity: 0;
+        transform: translateY(10px) scale(0.97);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
 }
 
 .rrc-chat-panel {
     position: fixed;
     right: var(--rrc-chat-right);
-    bottom: calc(var(--rrc-chat-bottom) + 70px);
+    bottom: calc(var(--rrc-chat-bottom) + 64px);
     z-index: 1060;
     display: flex;
     width: min(390px, calc(100vw - 32px));
@@ -75,13 +127,40 @@
     justify-content: space-between;
     gap: 12px;
     padding: 14px 16px;
+    border-bottom: 2px solid var(--rrc-chat-orange);
     background: var(--rrc-chat-navy);
     color: #fff;
 }
 
 .rrc-chat-heading {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    min-width: 0;
+}
+
+.rrc-chat-avatar {
+    display: grid;
+    width: 40px;
+    height: 40px;
+    flex: 0 0 auto;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--rrc-chat-orange);
+    color: var(--rrc-chat-navy);
+}
+
+.rrc-chat-avatar svg {
+    width: 22px;
+    height: 22px;
+    fill: currentColor;
+    stroke: none;
+}
+
+.rrc-chat-heading-copy {
     display: grid;
     gap: 3px;
+    min-width: 0;
 }
 
 .rrc-chat-title {
@@ -242,8 +321,19 @@
     }
 
     .rrc-chat-launcher {
-        width: 56px;
-        height: 56px;
+        min-height: 56px;
+        justify-content: center;
+        gap: 0;
+        padding: 6px;
+    }
+
+    .rrc-chat-launcher-text {
+        display: none;
+    }
+
+    .rrc-chat-launcher-icon {
+        width: 42px;
+        height: 42px;
     }
 
     .rrc-chat-panel {
@@ -278,6 +368,7 @@
 
 @media (prefers-reduced-motion: reduce) {
     .rrc-chat-launcher {
+        animation: none;
         transition: none;
     }
 }

@@ -28,14 +28,17 @@
     const widget = createElement('div', 'rrc-chat-widget');
     const launcher = createElement('button', 'rrc-chat-launcher');
     launcher.type = 'button';
-    launcher.setAttribute('aria-label', 'Chat with RRC Nexus');
+    launcher.setAttribute('aria-label', 'Ask RRC AI — chat with the RRC Nexus assistant');
     launcher.setAttribute('aria-controls', 'rrc-chat-panel');
     launcher.setAttribute('aria-expanded', 'false');
-    launcher.title = 'Chat with RRC Nexus';
-    launcher.appendChild(createIcon([
-        'M20 11.5a7.5 7.5 0 0 1-7.5 7.5H7l-4 2 1.5-4.5A7.5 7.5 0 1 1 20 11.5Z',
-        'M8 11.5h.01M12 11.5h.01M16 11.5h.01'
+    launcher.title = 'Ask RRC AI';
+    const launcherIcon = createElement('span', 'rrc-chat-launcher-icon');
+    launcherIcon.appendChild(createIcon([
+        'M12 3.5 13.7 9l5.8 1.7-5.8 1.7L12 18l-1.7-5.6L4.5 10.7 10.3 9 12 3.5Z',
+        'M18.5 15.5l.8 2.2 2.2.8-2.2.8-.8 2.2-.8-2.2-2.2-.8 2.2-.8.8-2.2Z'
     ]));
+    const launcherText = createElement('span', 'rrc-chat-launcher-text', 'Ask RRC AI');
+    launcher.append(launcherIcon, launcherText);
 
     const panel = createElement('section', 'rrc-chat-panel');
     panel.id = 'rrc-chat-panel';
@@ -45,10 +48,17 @@
 
     const header = createElement('header', 'rrc-chat-header');
     const heading = createElement('div', 'rrc-chat-heading');
-    heading.append(
-        createElement('strong', 'rrc-chat-title', 'RRC Nexus Assistant'),
-        createElement('span', 'rrc-chat-subtitle', 'How can we help you?')
+    const headingAvatar = createElement('span', 'rrc-chat-avatar');
+    headingAvatar.setAttribute('aria-hidden', 'true');
+    headingAvatar.appendChild(createIcon([
+        'M12 3.5 13.7 9l5.8 1.7-5.8 1.7L12 18l-1.7-5.6L4.5 10.7 10.3 9 12 3.5Z'
+    ]));
+    const headingCopy = createElement('div', 'rrc-chat-heading-copy');
+    headingCopy.append(
+        createElement('strong', 'rrc-chat-title', 'RRC Nexus AI'),
+        createElement('span', 'rrc-chat-subtitle', 'Online • Ask about workspaces & pricing')
     );
+    heading.append(headingAvatar, headingCopy);
 
     const closeButton = createElement('button', 'rrc-chat-close');
     closeButton.type = 'button';
